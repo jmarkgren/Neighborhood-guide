@@ -6,20 +6,12 @@ body {
   padding: 0;
 }
 
-.container {
-  height: 100%;
-  position: relative;
-}
-
 input {
   font-size: 12px;
 }
 
 h1 {
-  color: #525454;
   font-size: 22px;
-  margin: 0 0 10px 0;
-  text-align: center;
 }
 
 hr {
@@ -29,12 +21,15 @@ hr {
   border: none;
 }
 
+.app-container {
+  min-height: 99%;
+  height: 99%;
+  width: 100%;
+}
+
 #map {
-  bottom:0px;
   height: 100%;
-  left: 362px;
-  position: absolute;
-  right: 0px;
+  width: 100%;
 }
 
 .options-box {
@@ -43,7 +38,24 @@ hr {
   border-radius: 3px;
   height: 100%;
   line-height: 35px;
-  padding: 10px 10px 30px 10px;
   text-align: left;
-  width: 340px;
+}
+
+.options-header {
+  padding: 20px 20px 0 20px;
+}
+
+.restaurant-list-item {
+  border-radius: 0 !important;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 767px) {
+  .app-container {
+    margin: 0 auto;
+  }
+  .options-col {
+    margin-bottom: 10px;
+  }
 }
